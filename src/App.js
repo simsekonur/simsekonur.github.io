@@ -17,11 +17,7 @@ function App() {
         <a href='./files/cv.pdf' download>
             CV
           </a>
-        {/* <button>
-          <a href='./files/Onur-ŞİMŞEK-EN.pdf'>
-            <span>CV</span>
-          </a>
-        </button> */}
+       
         {/* <button  onclick={handlePdfOpen}>Resume</button> */}
         </div>
       </header>
