@@ -24,6 +24,38 @@
   color: white;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  /* float: left; */
+}
+
+.div1 {
+  background: #DDD;
+}
+
+.div2 {
+  background: #AAA;
+}
+
+.div3 {
+  background: #777;
+}
+
+.div4 {
+  background: #444;
+}
+
 .App-link {
   color: #61dafb;
 }
