@@ -1,8 +1,6 @@
 import me from './img/me.jpg';
+import {about, education, frameworks, interests, pls} from './content';
 import './App.css';
-const handlePdfOpen = (params) => {
-  window.open('./files/Onur-ŞİMŞEK-EN.pdf');
-}
 
 function App() {
   return (
@@ -14,9 +12,9 @@ function App() {
             <span>Home</span>
           </a>
         </button>
-        <a href='./files/cv.pdf' download>
+        {/* <a href='./files/cv.pdf' download>
             CV
-          </a>
+          </a> */}
        
         {/* <button  onclick={handlePdfOpen}>Resume</button> */}
         </div>
@@ -31,16 +29,14 @@ function App() {
         <div className= 'row'>
           <div >
             <h3>About</h3>
-            <p> My name is Onur ŞİMŞEK. I have graduated from the Computer Engineering Deparment of Middle East
-              Technical University. I am from Ankara, Turkey and I am 24 years old. Currently, I am a Full Stack
-              Software Developer at Avena Information Technologies.
+            <p>{about}
             </p>
           </div>
           <div >
             <h3>Education</h3>
             <ul>
-              <li>Middle East Technical University</li>
-              <li>Aydınlıkevler Anatolian High School</li>
+              <li>{education[0]}</li>
+              <li>{education[1]}</li>
             </ul>
           </div>
         </div>
@@ -48,22 +44,22 @@ function App() {
         <div>
             <h3>Interest</h3>
             <ul>
-              <li>Desktop Application Development</li>
-              <li>Web Application Development</li>
+              <li>{interests[0]}</li>
+              <li>{interests[1]}</li>
             </ul>
           </div>
             <div >
               <h3>Programming Languages</h3>
               <ul>
-                <li>C/C++</li>
-                <li>C#</li>
-                <li>Java</li>
-                <li>JavaScript</li>
+                <li>{pls[0]}</li>
+                <li>{pls[1]}</li>
+                <li>{pls[2]}</li>
+                <li>{pls[3]}</li>
               </ul>
               <h3>Frameworks</h3>
               <ul>
-                <li>Qt</li>
-                <li>React</li>
+                <li>{frameworks[0]}</li>
+                <li>{frameworks[1]}</li>
               </ul>
             </div>
         </div>
