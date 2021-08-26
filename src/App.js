@@ -29,14 +29,14 @@ function App() {
       <b>onursimsek0643@gmail.com</b>
       <div className= 'column'>
         <div className= 'row'>
-          <div className= 'div1'>
+          <div >
             <h3>About</h3>
             <p> My name is Onur ŞİMŞEK. I have graduated from the Computer Engineering Deparment of Middle East
               Technical University. I am from Ankara, Turkey and I am 24 years old. Currently, I am a Full Stack
               Software Developer at Avena Information Technologies.
             </p>
           </div>
-          <div className= 'div2'>
+          <div >
             <h3>Education</h3>
             <ul>
               <li>Middle East Technical University</li>
@@ -45,14 +45,14 @@ function App() {
           </div>
         </div>
         <div className= 'row'>
-        <div className= 'div3'>
+        <div>
             <h3>Interest</h3>
             <ul>
               <li>Desktop Application Development</li>
               <li>Web Application Development</li>
             </ul>
           </div>
-            <div className= 'div4'>
+            <div >
               <h3>Programming Languages</h3>
               <ul>
                 <li>C/C++</li>
