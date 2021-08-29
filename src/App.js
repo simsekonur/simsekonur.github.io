@@ -36,9 +36,9 @@ export default function App() {
             <Card.Body>
               <Card.Title>Education</Card.Title>
               <Card.Text>
-                <ul>
-                  {education.map(item => <li>{item}</li>)}
-                </ul>
+                <dl>
+                  {education.map(item => <dd>{item}</dd>)}
+                </dl>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -49,9 +49,9 @@ export default function App() {
             <Card.Body>
               <Card.Title>Interest</Card.Title>
               <Card.Text>
-                <ul>
-                  {interests.map(item => <li>{item}</li>)}
-                </ul>
+                <dl>
+                  {interests.map(item => <dd>{item}</dd>)}
+                </dl>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -61,15 +61,15 @@ export default function App() {
             <Card.Body>
               <Card.Title>Programming Languages</Card.Title>
               <Card.Text>
-                <ul>
-                  {pls.map(item => <li style= {{fontSize:'14px'}}>{item}</li>)}
-                </ul>
+                <dl>
+                  {pls.map(item => <dd style= {{fontSize:'14px'}}>{item}</dd>)}
+                </dl>
               </Card.Text>
               <Card.Title>Frameworks</Card.Title>
               <Card.Text>
-                <ul>
-                  {frameworks.map(item => <li style= {{fontSize:'14px'}}>{item}</li>)}
-                </ul>
+                <dl>
+                  {frameworks.map(item => <dd style= {{fontSize:'14px'}}>{item}</dd>)}
+                </dl>
               </Card.Text>
             </Card.Body>
           </Card>
