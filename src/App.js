@@ -21,7 +21,7 @@ function App() {
       <b>onursimsek0643@gmail.com</b>
       <div className='column'>
         <div className='row'>
-          <Card style={{ width: '30rem',marginLeft:'2rem' }}>
+          <Card style={{ width: '30rem',marginLeft:'2rem', marginTop:'2rem' }}>
             <Card.Img variant="top" src="./img/me.jpg" width='400' height='400' />
             <Card.Body>
               <Card.Title>About</Card.Title>
