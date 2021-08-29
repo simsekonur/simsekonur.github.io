@@ -9,3 +9,5 @@ export const interests= [`Desktop Application Development`, `Web Application Dev
 export const pls= [`C/C++`,`C#`,`Java`,`JavaScript`]
 
 export const frameworks= [`Qt`,`React`]
+
+export const images = [`./img/me.jpg`]
