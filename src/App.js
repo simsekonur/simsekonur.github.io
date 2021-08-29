@@ -12,17 +12,13 @@ import { about, education, frameworks, interests, pls } from './content';
 
 //my components
 import ItemView from './components/ItemView';
+import Introduction from './components/Introduction';
 
 export default function App() {
-  const introduction = <div style = {{color:'white'}}>
-      <h1>Onur ŞİMŞEK</h1>
-      <h3>Software Developer</h3>
-      <b >onursimsek0643@gmail.com</b>
-  </div>
 
   return (
     <div className="App">
-      {introduction}
+      <Introduction name= 'Onur ŞİMŞEK' role = 'Software Developer'/>
       <div className='column'>
         <div className='row'>
           <Card className="bg-dark text-white" style={{ width: '30rem',marginRight:'2rem', marginTop:'2rem' }}>
