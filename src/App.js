@@ -44,7 +44,7 @@ function App() {
           </Card>
         </div>
         <div className='row'>
-          <Card style={{ width: '30rem',marginTop:'2rem',marginLeft:'2rem' }}>
+          <Card style={{ width: '30rem',marginLeft:'2rem' }}>
             <Card.Img variant="top" src="https://vizyonergenc.com/storage/posts/July2019/EJRIu1ewNyVv4K4fJutn.png" width='400' height='400'/>
             <Card.Body>
               <Card.Title>Interest</Card.Title>
