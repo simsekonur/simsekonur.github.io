@@ -57,7 +57,7 @@ export default function App() {
           </Card>
 
           <Card className="bg-dark text-white" style={{ width: '30rem', marginTop:'2rem' }}>
-            <Card.Img variant="top" src="https://miro.medium.com/max/1400/1*PEijqNwBPUGJG6AzWKln7A.jpeg" width='300' height='300'/>
+            <Card.Img variant="top" src="https://d1psgljc389n8q.cloudfront.net/discussions/posts/pJfxXRttq" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Programming Languages</Card.Title>
               <Card.Text>
