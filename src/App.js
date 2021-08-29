@@ -31,7 +31,7 @@ function App() {
             </Card.Body>
           </Card>
 
-          <Card style={{ width: '30rem',marginLeft:'2rem' }}>
+          <Card style={{ width: '30rem',marginLeft:'2rem',marginTop:'2rem' }}>
             <Card.Img variant="top" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi&size=770:433" width='400' height='400'/>
             <Card.Body>
               <Card.Title>Education</Card.Title>
@@ -56,7 +56,7 @@ function App() {
             </Card.Body>
           </Card>
 
-          <Card style={{ width: '30rem', marginLeft:'2rem' }}>
+          <Card style={{ width: '30rem', marginLeft:'2rem',marginTop:'2rem' }}>
             <Card.Img variant="top" src="https://miro.medium.com/max/1400/1*PEijqNwBPUGJG6AzWKln7A.jpeg" width='400' height='400'/>
             <Card.Body>
               <Card.Title>Programming Languages</Card.Title>
