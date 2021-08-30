@@ -24,7 +24,7 @@ export default function App() {
             <Card.Img variant="top" src="./img/me.jpg" width='300' height='300' />
             <Card.Body>
               <Card.Title>About</Card.Title>
-              <Card.Text>
+              <Card.Text style= {{textAlign:'left'}}>
                 {about}
               </Card.Text>
             </Card.Body>
@@ -34,10 +34,10 @@ export default function App() {
             <Card.Img variant="top" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi&size=770:433" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Education</Card.Title>
-              <Card.Text>
-                <dl>
-                  {education.map(item => <dd>{item}</dd>)}
-                </dl>
+              <Card.Text style= {{textAlign:'left'}} >
+                <ul>
+                  {education.map(item => <li>{item}</li>)}
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -47,10 +47,10 @@ export default function App() {
             <Card.Img variant="top" src="https://vizyonergenc.com/storage/posts/July2019/EJRIu1ewNyVv4K4fJutn.png" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Interest</Card.Title>
-              <Card.Text>
-                <dl>
-                  {interests.map(item => <dd>{item}</dd>)}
-                </dl>
+              <Card.Text style= {{textAlign:'left'}}>
+                <ul>
+                  {interests.map(item => <li>{item}</li>)}
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -59,16 +59,16 @@ export default function App() {
             <Card.Img variant="top" src="https://d1psgljc389n8q.cloudfront.net/discussions/posts/pJfxXRttq" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Programming Languages</Card.Title>
-              <Card.Text>
-                <dl>
-                  {pls.map(item => <dd style= {{fontSize:'14px'}}>{item}</dd>)}
-                </dl>
+              <Card.Text style= {{textAlign:'left'}}>
+                <ul>
+                  {pls.map(item => <li style= {{fontSize:'14px'}}>{item}</li>)}
+                </ul>
               </Card.Text>
               <Card.Title>Frameworks</Card.Title>
-              <Card.Text>
-                <dl>
-                  {frameworks.map(item => <dd style= {{fontSize:'14px'}}>{item}</dd>)}
-                </dl>
+              <Card.Text style= {{textAlign:'left'}}>
+                <ul>
+                  {frameworks.map(item => <li style= {{fontSize:'14px'}}>{item}</li>)}
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>

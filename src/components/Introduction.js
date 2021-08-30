@@ -3,12 +3,12 @@ import { SocialIcon } from 'react-social-icons';
 export default function Introduction({name, role}) {
     return (
         <div style = {{color:'white'}}>
-            <h1>{name}</h1>
-            <h3>{role}</h3>
-            <SocialIcon url='https://www.linkedin.com/in/onur-%C5%9Fim%C5%9Fek-7566a7170/' bgColor='white' style={{marginRight:'8px'}}/>
+            <h1 style= {{fontSize:'40px'}}>{name}</h1>
+            <h3 style= {{fontSize:'24px'}}>{role}</h3>
+            <SocialIcon url='https://www.linkedin.com/in/onur-%C5%9Fim%C5%9Fek-7566a7170/' bgColor='white' style={{marginRight:'8px'}} />
             <SocialIcon url='https://github.com/simsekonur' bgColor='white' style={{marginRight:'8px'}} />
-            <SocialIcon url='mailto:onursimsek0643@gmail.com?Subject=Some%20subject' bgColor='white' style={{marginRight:'8px'}} />
-            <SocialIcon url='https://www.instagram.com/smsk_onur/' bgColor='white' className='fas fa-square-full' />
+            <SocialIcon url='mailto:onursimsek0643@gmail.com?Subject=About%20meeting' bgColor='white' style={{marginRight:'8px'}} />
+            <SocialIcon url='https://www.instagram.com/smsk_onur/' bgColor='white'/>
         </div>
     );
 }
