@@ -5,9 +5,9 @@ export default function Introduction({name, role}) {
         <div style = {{color:'white'}}>
             <h1 style= {{fontSize:'40px'}}>{name}</h1>
             <h3 style= {{fontSize:'24px'}}>{role}</h3>
-            <SocialIcon url='https://www.linkedin.com/in/onur-%C5%9Fim%C5%9Fek-7566a7170/' bgColor='white' style={{marginRight:'8px'}} />
-            <SocialIcon url='https://github.com/simsekonur' bgColor='white' style={{marginRight:'8px'}} />
             <SocialIcon url='mailto:onursimsek0643@gmail.com?Subject=About%20meeting' bgColor='white' style={{marginRight:'8px'}} />
+            <SocialIcon url='https://github.com/simsekonur' bgColor='white' style={{marginRight:'8px'}} />
+            <SocialIcon url='https://www.linkedin.com/in/onur-%C5%9Fim%C5%9Fek-7566a7170/' bgColor='white' style={{marginRight:'8px'}} />
             <SocialIcon url='https://www.instagram.com/smsk_onur/' bgColor='white'/>
         </div>
     );
