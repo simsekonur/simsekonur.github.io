@@ -25,7 +25,10 @@ export default function App() {
         </div>
         <div className='row'>
           <CardCustom header = 'Interest' imageSrc= 'https://vizyonergenc.com/storage/posts/July2019/EJRIu1ewNyVv4K4fJutn.png' content= {interests}/>
-          <CardCustom header = {['Programming Languages', 'Frameworks']} imageSrc= 'https://d1psgljc389n8q.cloudfront.net/discussions/posts/pJfxXRttq' content= {[pls,frameworks]}/>
+          <CardCustom 
+          imageSrc= 'https://d1psgljc389n8q.cloudfront.net/discussions/posts/pJfxXRttq'
+          content= {[{ items: pls, header: 'Programming Languages'}, {items: frameworks, header: 'Frameworks'}]}
+          />
         </div>
     </div>
   );
