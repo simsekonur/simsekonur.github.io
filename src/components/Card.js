@@ -33,19 +33,21 @@ export default function CardCustom({header, imageSrc, content}) {
     }
     else {
         const c = content.map ((o,i) => 
-            <Card.Body>
+            <div>
                 <Card.Title>{o.header}</Card.Title>
                 <Card.Text style= {{textAlign:'left'}}>
                     <ul>
                     {o.items.map(item => <li style= {{fontSize:'14px'}}>{item}</li>)}
                     </ul>
                 </Card.Text>
-            </Card.Body>
+            </div>
         );
         return (
             <Card className="bg-dark text-white" style={{ width: '30rem' }}>
             <Card.Img variant="top" src={imageSrc} width='300' height='300'/>
-            {c}
+            <Card.Body>
+                {c}
+            </Card.Body>
           </Card>
         );
     }
