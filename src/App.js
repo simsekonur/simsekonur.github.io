@@ -18,10 +18,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <Introduction name= 'Onur ŞİMŞEK' role = 'Software Developer'/>
-      <div className='column'>
+        <Introduction name= 'Onur ŞİMŞEK' role = 'Software Developer'/>
         <div className='row'>
-          <Card className="bg-dark text-white" style={{ width: '30rem',marginRight:'2rem', marginTop:'2rem' }}>
+          <Card className="bg-dark text-white" style={{ width: '30rem', marginTop:'2rem' }}>
             <Card.Img variant="top" src="./img/me.jpg" width='300' height='300' />
             <Card.Body>
               <Card.Title>About</Card.Title>
@@ -31,7 +30,7 @@ export default function App() {
             </Card.Body>
           </Card>
 
-          <Card className="bg-dark text-white" style={{ width: '30rem',marginTop:'2rem' }}>
+          <Card className="bg-dark text-white" style={{ width: '30rem', marginTop:'2rem' }}>
             <Card.Img variant="top" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi&size=770:433" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Education</Card.Title>
@@ -44,7 +43,7 @@ export default function App() {
           </Card>
         </div>
         <div className='row'>
-          <Card className="bg-dark text-white" style={{ width: '30rem',marginRight:'2rem', marginTop:'2rem' }}>
+          <Card className="bg-dark text-white" style={{ width: '30rem', marginTop:'2rem' }}>
             <Card.Img variant="top" src="https://vizyonergenc.com/storage/posts/July2019/EJRIu1ewNyVv4K4fJutn.png" width='300' height='300'/>
             <Card.Body>
               <Card.Title>Interest</Card.Title>
@@ -74,8 +73,6 @@ export default function App() {
             </Card.Body>
           </Card>
         </div>
-      </div>
-
     </div>
   );
 }

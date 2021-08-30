@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   background-color: #282c34;
-  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -27,12 +31,16 @@
 }
 
 .row {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
 }
 
 .column {
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
