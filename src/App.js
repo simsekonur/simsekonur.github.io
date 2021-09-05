@@ -20,7 +20,7 @@ export default function App() {
     <div className="App">
         <Introduction name= 'Onur ŞİMŞEK' role = 'Software Developer'/>
         <div className='row'>
-          <CardCustom header = 'About' imageSrc="./img/me.jpg" content= {about}/>
+          <CardCustom header = 'About' imageSrc="./me.jpg" content= {about}/>
           <CardCustom header = 'Education' imageSrc='https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/online-3412473_1920.jpeg?meGHIUut1mybIL3pem8eWqk34osmW3Zi&size=770:433' content={education}/>
         </div>
         <div className='row'>
