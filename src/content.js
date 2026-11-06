@@ -7,12 +7,6 @@ export const education = [
         gpa: `CGPA: 3.19`,
         location: `Ankara, Turkey`,
         years: `2015 – 2020`
-    },
-    {
-        school: `Aydınlıkevler Anatolian High School`,
-        degree: `High School Diploma`,
-        location: `Ankara, Turkey`,
-        years: ``
     }
 ]
 
@@ -76,7 +70,7 @@ export const skills = {
     tools: [`GitHub Actions`, `Linux/Unix`, `NinjaOne`]
 }
 
-export const interests = [`Backend Engineering`, `Full-Stack Development`, `Integration Engineering`, `Distributed Systems`, `Workflow Automation`]
+export const interests = [`Backend Engineering`, `Full-Stack Development`, `Integration Engineering`, `Workflow Automation`]
 
 export const languages = [
     { lang: `Turkish`, level: `Native` },
