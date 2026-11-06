@@ -6,13 +6,11 @@ on:
       - master
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: 'pages'
   cancel-in-progress: false
@@ -35,6 +33,22 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Patch postcss for Node 18 compatibility
+        run: |
+          node -e "
+          const fs = require('fs');
+          const p = './node_modules/postcss-safe-parser/node_modules/postcss/package.json';
+          if (fs.existsSync(p)) {
+            const pkg = JSON.parse(fs.readFileSync(p, 'utf8'));
+            if (pkg.exports) {
+              const files = ['at-rule','comment','container','css-syntax-error','declaration','fromJSON','input','lazy-result','list','map-generator','node','parse','parser','postcss','previous-map','processor','result','root','rule','stringifier','stringify','symbols','terminal-highlight','tokenize','warn-once','warning'];
+              files.forEach(f => { pkg.exports['./lib/' + f] = './lib/' + f + '.js'; });
+              fs.writeFileSync(p, JSON.stringify(pkg, null, 2));
+              console.log('Successfully patched postcss package.json');
+            }
+          }
+          "
 
       - name: Build production bundle
         run: npm run build

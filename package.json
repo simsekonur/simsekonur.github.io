@@ -18,6 +18,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "postinstall": "node -e \"const fs=require('fs'),p='./node_modules/postcss-safe-parser/node_modules/postcss/package.json';if(fs.existsSync(p)){const d=JSON.parse(fs.readFileSync(p));if(d.exports){['at-rule','comment','container','css-syntax-error','declaration','fromJSON','input','lazy-result','list','map-generator','node','parse','parser','postcss','previous-map','processor','result','root','rule','stringifier','stringify','symbols','terminal-highlight','tokenize','warn-once','warning'].forEach(f=>d.exports['./lib/'+f]='./lib/'+f+'.js');fs.writeFileSync(p,JSON.stringify(d,null,2));}}\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
