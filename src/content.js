@@ -48,7 +48,7 @@ export const experience = [
         company: "Just Appraised",
         type: "Contract · Remote",
         location: "USA",
-        period: "Apr 2024 – Sep 2026",
+        period: "Apr 2024 – ",
         highlight: "Owned 8 integration repositories & collaborated directly with CTO",
         techStack: ["C#", "Java", "Python", "PostgreSQL", "NinjaOne", "NSSM", "Docker", "GitHub Actions"],
         bullets: [
