@@ -1,34 +1,49 @@
+import React from 'react';
 import Section from './Section';
 import { experience } from '../content';
 
 export default function ExperienceSection() {
     return (
-        <Section title="Experience">
-            {experience.map((job, i) => (
-                <div key={i} style={{
-                    background: '#1e2233',
-                    borderRadius: '10px',
-                    padding: '20px 24px',
-                    marginBottom: '16px',
-                    textAlign: 'left',
-                    borderLeft: '3px solid #4A90E2'
-                }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '4px' }}>
-                        <div>
-                            <span style={{ color: 'white', fontWeight: '700', fontSize: '15px' }}>{job.title}</span>
-                            <span style={{ color: '#4A90E2', fontWeight: '600', fontSize: '14px' }}> · {job.company}</span>
+        <Section id="experience" tag="03. Work History" title="Professional Experience">
+            <div className="experience-list">
+                {experience.map((job, idx) => (
+                    <article key={idx} className="experience-card">
+                        <div className="exp-header">
+                            <div>
+                                <span className="exp-title">{job.title}</span>
+                                <span className="exp-company"> · {job.company}</span>
+                            </div>
+                            <span className="exp-period">{job.period}</span>
                         </div>
-                        <span style={{ color: '#718096', fontSize: '13px', whiteSpace: 'nowrap' }}>{job.period}</span>
-                    </div>
-                    <div style={{ color: '#718096', fontSize: '12px', marginTop: '2px', marginBottom: '12px' }}>
-                        {job.type} · {job.location}
-                    </div>
-                    <ul style={{ color: '#a0aec0', fontSize: '14px', lineHeight: '1.7', paddingLeft: '18px', margin: 0 }}>
-                        {job.bullets.map((b, j) => <li key={j} style={{ marginBottom: '4px' }}>{b}</li>)}
-                    </ul>
-                </div>
-            ))}
+
+                        <div className="exp-meta">
+                            <span>{job.type}</span>
+                            <span>•</span>
+                            <span>{job.location}</span>
+                        </div>
+
+                        {job.highlight && (
+                            <div className="exp-highlight-bar">
+                                ⭐ {job.highlight}
+                            </div>
+                        )}
+
+                        <ul className="exp-bullets">
+                            {job.bullets.map((bullet, bIdx) => (
+                                <li key={bIdx}>{bullet}</li>
+                            ))}
+                        </ul>
+
+                        {job.techStack && (
+                            <div className="tech-tag-group">
+                                {job.techStack.map((tech, tIdx) => (
+                                    <span key={tIdx} className="tech-tag">{tech}</span>
+                                ))}
+                            </div>
+                        )}
+                    </article>
+                ))}
+            </div>
         </Section>
     );
 }
-
